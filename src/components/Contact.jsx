@@ -49,7 +49,7 @@ function Contact() {
                 </div>
                 <div>
                   <div className="mono-text" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>TELEGRAM</div>
-                  <div>Phearun (+855 96 948 0891)</div>
+                  <div>Phearun (+855 96 *** **91)</div>
                 </div>
               </a>
 

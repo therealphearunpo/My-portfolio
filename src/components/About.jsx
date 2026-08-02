@@ -13,11 +13,13 @@ function About() {
           <div className="row g-4">
             <div className="col-lg-7">
               <p className="about-paragraph">
-                I am a 2nd-year student pursuing a Bachelor of Engineering in Information Technology Engineering at the Royal University of Phnom Penh (RUPP, Faculty of Engineering).
+                I am a 2nd-year student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
                 My programming journey started with C and C++, where I built strong foundations in object-oriented programming, data structures, and memory management.
               </p>
               <p className="about-paragraph">
-                As I progressed, I discovered my passion for web development. I enjoy taking ideas and building functional, interactive applications using JavaScript and React. Whether it's creating a class management tool or visualizing sorting algorithms step-by-step, I enjoy solving practical problems with code.
+                As I progressed, I discovered my passion for web development. I enjoy taking ideas and building functional, 
+                interactive applications using JavaScript and React. Whether it's creating a class management tool or visualizing 
+                sorting algorithms step-by-step, I enjoy solving practical problems with code.
               </p>
               <p className="about-paragraph">
                 I'm actively seeking an internship opportunity in software development or web engineering where I can learn from experienced engineers and contribute to real projects.
@@ -28,7 +30,7 @@ function About() {
               <div className="quick-facts">
                 <div className="fact-item">
                   <div className="fact-label">University</div>
-                  <div className="fact-value">RUPP (Faculty of Engineering)</div>
+                  <div className="fact-value">RUPP - Faculty of Engineering</div>
                 </div>
 
                 <div className="fact-item">
@@ -53,7 +55,7 @@ function About() {
 
                 <div className="fact-item">
                   <div className="fact-label">Focus</div>
-                  <div className="fact-value">Web & Software Engineering</div>
+                  <div className="fact-value">Software Engineering</div>
                 </div>
               </div>
             </div>

@@ -44,7 +44,7 @@ function Hero() {
             </div>
 
             <p className="hero-bio">
-              Year 2 student pursuing a Bachelor of Engineering in Information Technology Engineering at the Royal University of Phnom Penh (RUPP, Faculty of Engineering). I build web applications and write C/C++ software.
+              Year 2 student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
             </p>
 
             <div className="hero-actions">
@@ -67,24 +67,24 @@ function Hero() {
                   <img src="/avatar.jpg" alt="Po Phearun" />
                 </div>
                 <div className="code-box">
-                  <div><span className="kw">const</span> <span className="prop">developer</span> = &#123;</div>
+                  <div><span className="kw">Const</span> <span className="prop">developer</span> = &#123;</div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">name</span>: <span className="str">"Po Phearun"</span>,
+                    <span className="prop">Name</span>: <span className="str">"Po Phearun"</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">university</span>: <span className="str">"RUPP"</span>,
+                    <span className="prop">University</span>: <span className="str">"RUPP"</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">faculty</span>: <span className="str">"Faculty of Engineering"</span>,
+                    <span className="prop">Faculty</span>: <span className="str">"Faculty of Engineering"</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">degree</span>: <span className="str">"B.Eng. IT Engineering"</span>,
+                    <span className="prop">Degree</span>: <span className="str">"B.Eng. IT Engineering"</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">year</span>: <span className="num">2</span>,
+                    <span className="prop">Year</span>: <span className="num">2</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">status</span>: <span className="str">"Open to Internships"</span>
+                    <span className="prop">Status</span>: <span className="str">"Open to Internships"</span>
                   </div>
                   <div>&#125;;</div>
                 </div>
