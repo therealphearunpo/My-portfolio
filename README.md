@@ -1,6 +1,7 @@
 ﻿# My Portfolio
 
-## Contact
-- Email: phearun@example.com
-- LinkedIn: linkedin.com/in/phearun
-- GitHub: github.com/phearun
+A modern, responsive portfolio built with React.
+
+## Features
+- Hero, Skills, Projects, Contact sections
+- Clean and minimal design
