@@ -1,8 +1,6 @@
 ﻿# My Portfolio
 
-## Features
-- Fast loading
-- Responsive design
-- Dark mode
-- Modern UI
-- Contact form
+## Contact
+- Email: phearun@example.com
+- LinkedIn: linkedin.com/in/phearun
+- GitHub: github.com/phearun
