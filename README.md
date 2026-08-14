@@ -1,10 +1,8 @@
 ﻿# My Portfolio
 
-## Live Preview
-https://my-portfolio.vercel.app
-
 ## Features
-- Hero section
-- Skills
-- Projects
-- Contact
+- Fast loading
+- Responsive design
+- Dark mode
+- Modern UI
+- Contact form
