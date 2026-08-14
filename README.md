@@ -1,10 +1,10 @@
 ﻿# My Portfolio
 
-## Demo
-[Live Preview](#)
+## Live Preview
+https://my-portfolio.vercel.app
 
-## Screenshots
-_Coming soon_
-
-## Tech Stack
-- React, Vite, CSS3
+## Features
+- Hero section
+- Skills
+- Projects
+- Contact
