@@ -1,14 +1,29 @@
 ﻿# My Portfolio
 
-## Dependencies
-- react: ^18.0.0
-- vite: ^5.0.0
-- emailjs-com: ^3.2.0
+A stunning, modern personal portfolio website built with React, Vite, and pure CSS.
 
-## Dev Dependencies
-- eslint
-- @vitejs/plugin-react
-- vite-plugin-svgr
+## Features
+- Responsive design
+- Smooth animations
+- Contact form with EmailJS
+- Project showcase
+- Skills section
 
-## Last Updated
-2026-08-14
+## Live Demo
+https://my-portfolio.vercel.app
+
+## Tech Stack
+- React 18
+- Vite 5
+- CSS3
+- EmailJS
+
+## Getting Started
+`ash
+git clone https://github.com/phearun/my-portfolio
+npm install
+npm run dev
+`
+
+## License
+MIT
