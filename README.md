@@ -1,7 +1,8 @@
 ﻿# My Portfolio
 
-A fully responsive, modern portfolio website showcasing skills, projects, and experience.
-
-## Built with React + Vite
-
-Fast, modern, and beautiful by design.
+## Roadmap
+- [ ] Add blog section
+- [ ] Dark/Light toggle
+- [ ] More project showcases
+- [ ] Animation polish
+- [ ] SEO improvements
