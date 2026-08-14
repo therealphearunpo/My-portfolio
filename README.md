@@ -1,21 +1,28 @@
 ﻿# My Portfolio
 
-## Environment Variables
-Create a .env file with:
-`
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-`
-"@,
-@"
-# My Portfolio
+A stunning, modern personal portfolio website built with React, Vite, and pure CSS.
 
-## Dependencies
-- react: ^18.0.0
-- vite: ^5.0.0
-- emailjs-com: ^3.2.0
+## Features
+- Responsive design
+- Smooth animations
+- Contact form
+- Project showcase
 
-## Dev Dependencies
-- eslint
-- @vitejs/plugin-react
+## Live Demo
+https://my-portfolio.vercel.app
+
+## Tech Stack
+- React 18
+- Vite 5
+- CSS3
+- EmailJS
+
+## Getting Started
+`ash
+git clone https://github.com/phearun/my-portfolio
+npm install
+npm run dev
+`
+
+## License
+MIT
