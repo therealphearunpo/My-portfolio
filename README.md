@@ -2,5 +2,19 @@
 
 A modern and responsive personal portfolio website.
 
-## Overview
-Built with React and modern web technologies to showcase my skills and projects.
+## Installation
+`ash
+npm install
+npm run dev
+`
+"@,
+@"
+# My Portfolio
+
+## Usage
+Visit the live site or clone and run locally.
+
+## Features
+- Responsive design
+- Dark mode support
+- Smooth animations
