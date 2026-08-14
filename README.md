@@ -1,7 +1,10 @@
 ﻿# My Portfolio
 
-## License
-MIT License - see LICENSE file for details.
+## Demo
+[Live Preview](#)
 
-## Author
-Phearun Po
+## Screenshots
+_Coming soon_
+
+## Tech Stack
+- React, Vite, CSS3
