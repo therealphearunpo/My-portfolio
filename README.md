@@ -1,11 +1,23 @@
 ﻿# My Portfolio
 
 ## Tech Stack
-- React
-- Vite
+- React 18
+- Vite 5
 - CSS3
 - JavaScript ES6+
 
-## Getting Started
-Clone the repo and run 
-pm install.
+## Project Structure
+`
+src/
+  components/
+  assets/
+`
+"@,
+@"
+# My Portfolio
+
+## Contributing
+Feel free to fork and submit pull requests.
+
+## Code Style
+Follow ESLint rules provided in the project.
