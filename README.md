@@ -1,7 +1,11 @@
 ﻿# My Portfolio
 
-A modern, responsive portfolio built with React.
+## FAQ
 
-## Features
-- Hero, Skills, Projects, Contact sections
-- Clean and minimal design
+**Q: How do I run this locally?**
+A: Clone the repo, run 
+pm install then 
+pm run dev.
+
+**Q: Can I use this template?**
+A: Yes! Feel free to fork it.
