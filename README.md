@@ -1,5 +1,7 @@
 ﻿# My Portfolio
 
-![GitHub stars](https://img.shields.io/github/stars/phearun/my-portfolio)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
+A fully responsive, modern portfolio website showcasing skills, projects, and experience.
+
+## Built with React + Vite
+
+Fast, modern, and beautiful by design.
