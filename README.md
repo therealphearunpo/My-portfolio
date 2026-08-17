@@ -21,6 +21,3 @@ git clone https://github.com/phearun/my-portfolio
 npm install
 npm run dev
 `
-
-## License
-MIT
