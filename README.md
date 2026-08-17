@@ -8,10 +8,7 @@ A stunning, modern personal portfolio website built with React, Vite, and pure C
 - Contact form with EmailJS
 - Project showcase
 - Skills section
-
-## Live Demo
-https://my-portfolio.vercel.app
-
+  
 ## Tech Stack
 - React 18
 - Vite 5
