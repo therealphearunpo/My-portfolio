@@ -16,7 +16,7 @@ A stunning, modern personal portfolio website built with React, Vite, and pure C
 - EmailJS
 
 ## Getting Started
-`ash
+`bash
 git clone https://github.com/phearun/my-portfolio
 npm install
 npm run dev
