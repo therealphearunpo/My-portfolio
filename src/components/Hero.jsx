@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const ROLES = ['IT Engineering Student', 'C / C++ Programmer', 'Java Developer', 'Python Developer', 'Web Developer', 'React Developer', 'Node.js Developer', 'Software Engineer']
+const ROLES = ['IT Engineering', 'Web Developer', 'Software Engineer', 'AI Engineer', 'AI Researcher', 'Python Developer', 'C Programmer', 'C++ Programmer', 'JavaScript Programmer', 'Java Developer',]
 
 function Hero() {
   const [roleText, setRoleText] = useState('')
