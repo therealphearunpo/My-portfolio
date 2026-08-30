@@ -6,20 +6,21 @@
   <title>Po Phearun - Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
-      --bg: #ffffff;
-      --card-bg: #111111;
-      --border: #000000;
+      --bg: #0f172a; /* Smoother dark background */
+      --card-bg: #1e293b; /* Slightly lighter card background */
+      --border: #334155;
       --accent: #10b981;
       --accent-light: #38bdf8;
-      --text: #f1f5f9;
+      --text: #f8fafc;
       --text-muted: #94a3b8;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
@@ -45,19 +46,21 @@
       flex-wrap: wrap;
       gap: 16px;
     }
-    h1 { font-family: 'Times New Roman', Times, serif; font-size: 2.3rem; color: #fff; line-height: 1.2; }
-    .title { color: var(--accent); font-size: 1.05rem; margin-top: 4px; }
+    h1 { font-weight: 700; font-size: 2.3rem; color: #fff; line-height: 1.2; }
+    .title { color: var(--accent); font-size: 1.05rem; margin-top: 4px; font-weight: 500; }
     .contact-info { text-align: right; font-size: 0.95rem; color: var(--text-muted); }
-    .contact-info a { color: var(--accent-light); text-decoration: none; }
+    .contact-info a { color: var(--accent-light); text-decoration: none; transition: color 0.2s; }
+    .contact-info a:hover { color: #fff; }
+    .contact-info div { margin-bottom: 4px; }
     section { margin-bottom: 28px; }
     h2 {
-      font-family: 'Times New Roman', Times, serif;
       font-size: 1.3rem;
       color: var(--accent);
       border-bottom: 2px solid var(--accent);
       padding-bottom: 4px;
       margin-bottom: 14px;
       display: inline-block;
+      font-weight: 700;
     }
     .item { margin-bottom: 18px; }
     .item-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 1.08rem; }
@@ -74,6 +77,7 @@
       font-size: 0.88rem;
       margin: 4px 6px 4px 0;
       border: 1px solid rgba(16, 185, 129, 0.25);
+      font-weight: 500;
     }
     .print-btn {
       position: fixed;
@@ -87,10 +91,12 @@
       font-weight: 700;
       cursor: pointer;
       box-shadow: 0 10px 20px rgba(16,185,129,0.3);
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Inter', sans-serif;
       font-size: 1rem;
+      transition: background 0.2s;
     }
     .print-btn:hover { background: #34d399; }
+    
     @media print {
       body { background: #fff; color: #000; padding: 0; }
       .container { border: none; box-shadow: none; padding: 0; background: #fff; }
@@ -109,19 +115,19 @@
         <div class="title">IT Engineering Student | Software Developer</div>
       </div>
       <div class="contact-info">
+        <div><i class="fas fa-phone"></i> +855 969 948 0891</div>
         <div><i class="fas fa-envelope"></i> threalphearun@gmail.com</div>
-        <div><i class="fab fa-telegram"></i> Telegram: @opnuraehplaereht</div>
-        <div><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</div>
+        <div><i class="fab fa-telegram"></i> <a href="https://t.me/opnuraehplaereht" target="_blank">@opnuraehplaereht</a></div>
+        <div><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/thephearun" target="_blank">www.linkedin.com/in/thephearun</a></div>
         <div><i class="fab fa-github"></i> <a href="https://github.com/therealphearunpo" target="_blank">github.com/therealphearunpo</a></div>
+        <div><i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia</div>
       </div>
     </header>
 
     <section>
       <h2>Summary</h2>
       <p style="color: var(--text-muted);">
-        Year 2 student pursuing a Bachelor of Engineering in Information Technology Engineering at the Royal University of Phnom Penh (RUPP, 
-        Faculty of Engineering). Skilled in C, C++, JavaScript, HTML5, CSS3, and React. Passionate about software engineering, building practical web applications, 
-        and algorithm design. Seeking software engineering internship opportunities.
+        Year 2 student pursuing a Bachelor of Engineering in Information Technology Engineering at the Royal University of Phnom Penh (RUPP). Skilled in C, C++, JavaScript, HTML5, CSS3, and React. Passionate about software engineering, building practical web applications, and algorithm design. Seeking software engineering internship opportunities.
       </p>
     </section>
 
@@ -129,44 +135,26 @@
       <h2>Education</h2>
       <div class="item">
         <div class="item-header">
-          <span>Bachelor of Engineering in Information Technology Engineering</span>
-          <span class="date">Engineering</span>
-        </div><span class="date">1 Dec 2025 - Present (Year 2)</span>
-        <div class="institution">Royal University of Phnom Penh - Faculty of Engineering - Department of IT Engineering</div>
-          <span class="date">20 Jan 2025 - Present (Year 1)</span>
-        <div class="institution">Royal University of Phnom Penh - Faculty of Engineering - Department of IT Engineering</div>
+          <span>Bachelor of Engineering in Information Technology</span>
+          <span class="date">Jan 2025 - Present</span>
+        </div>
+        <div class="institution">Royal University of Phnom Penh (RUPP) - Year 2</div>
       </div>
 
       <div class="item">
         <div class="item-header">
           <span>Diploma in English</span>
-          <span class="date">Language</span>
-        </div><span class="date">2026</span>
+          <span class="date">Expected 2026</span>
+        </div>
         <div class="institution">Paññāsāstra University of Cambodia - Institute of Foreign Languages (PUC-IFL)</div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span>High School</span>
-          <span class="date">High School</span>
-        </div><span class="date">2022 - 2024</span>
+          <span>High School Diploma</span>
+          <span class="date">2022 - 2024</span>
+        </div>
         <div class="institution">Angandet High School - Preykabas, Takev, Cambodia</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Secondary School</span>
-          <span class="date">Secondary School</span>
-        </div><span class="date">2019 - 2021</span>
-        <div class="institution">Angandet Secondary School - Preykabas, Takev, Cambodia</div>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span>Primary School</span>
-          <span class="date">Primary</span>
-        </div><span class="date">2018 - 2012</span>
-        <div class="institution">Angandet Primary School - Preykabas, Takev, Cambodia</div>
       </div>
     </section>
 
@@ -179,6 +167,7 @@
         </div>
         <ul>
           <li>Developed a web-based application for managing student records, class schedules, and tracking attendance.</li>
+          <li><strong>Technologies:</strong> [Add tech stack here, e.g., HTML, CSS, JavaScript, PHP]</li>
         </ul>
       </div>
       <div class="item">
@@ -188,6 +177,7 @@
         </div>
         <ul>
           <li>Built interactive visualizations for Stack, Queue, and Bubble Sort operations with step-by-step animations.</li>
+          <li><strong>Technologies:</strong> [Add tech stack here, e.g., Vanilla JavaScript, HTML5 Canvas]</li>
         </ul>
       </div>
       <div class="item">
@@ -197,6 +187,7 @@
         </div>
         <ul>
           <li>Built a weather application consuming live REST APIs with city lookup and asynchronous data handling.</li>
+          <li><strong>Technologies:</strong> [Add tech stack here, e.g., JavaScript, OpenWeather API]</li>
         </ul>
       </div>
       <div class="item">
@@ -205,7 +196,8 @@
           <span class="date">Personal Project</span>
         </div>
         <ul>
-          <li>Designed and built a responsive developer portfolio using React, Vite, and CSS.</li>
+          <li>Designed and built a responsive developer portfolio.</li>
+          <li><strong>Technologies:</strong> React, Vite, CSS3</li>
         </ul>
       </div>
     </section>
@@ -226,7 +218,7 @@
 
     <section>
       <h2>Languages</h2>
-      <p style="color: var(--text-muted);">Khmer (Native) - English (Intermediate)</p>
+      <p style="color: var(--text-muted);">Khmer (Native) &bull; English (Intermediate)</p>
     </section>
   </div>
 
