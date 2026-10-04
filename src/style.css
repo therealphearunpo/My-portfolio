@@ -264,7 +264,7 @@ section {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 90px;
+  width: 130px;
   animation: float-robot 6s ease-in-out infinite;
   z-index: 1000;
   pointer-events: auto; /* Allow clicks */
@@ -274,7 +274,7 @@ section {
 
 @media (max-width: 767px) {
   .floating-robot {
-    width: 70px;
+    width: 80px;
     bottom: 20px;
     right: 20px;
   }
