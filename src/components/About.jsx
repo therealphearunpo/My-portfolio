@@ -40,7 +40,7 @@ function About() {
 
                 <div className="fact-item">
                   <div className="fact-label">Academic Standing</div>
-                  <div className="fact-value">Year 2 Student</div>
+                  <div className="fact-value">Junior (Year 3) Student</div>
                 </div>
 
                 <div className="fact-item">

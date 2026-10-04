@@ -40,7 +40,7 @@ function Hero() {
             </div>
 
             <p className="hero-bio">
-              Year 2 student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
+              Junior (Year 3) student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
             </p>
 
             <div className="hero-actions">
@@ -77,7 +77,7 @@ function Hero() {
                     <span className="prop">degree</span>: <span className="str">"B.Eng. IT Engineering"</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">year</span>: <span className="num">2</span>,
+                    <span className="prop">year</span>: <span className="num">3</span>,
                   </div>
                   <div style={{ paddingLeft: '1.2rem' }}>
                     <span className="prop">status</span>: <span className="str">"Open to Internships"</span>
