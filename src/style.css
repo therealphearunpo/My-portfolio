@@ -18,6 +18,32 @@
   --radius-lg: 14px;
 }
 
+body.dark-theme {
+  --bg-color: #0f1115;
+  --card-bg: #1a1d24;
+  --card-border: #2d3139;
+  --card-hover: #222630;
+  --text-main: #f0f0f5;
+  --text-muted: #a1a1aa;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-emerald);
+}
+
 * {
   box-sizing: border-box;
 }

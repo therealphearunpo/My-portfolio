@@ -10,12 +10,17 @@ function AnimatedBackground() {
     let animationId
     let particles = []
 
-    const resize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-    resize()
-    window.addEventListener('resize', resize)
+    let resizeTimeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }, 150);
+    };
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener('resize', handleResize);
 
     const PARTICLE_COUNT = Math.min(60, Math.floor((window.innerWidth * window.innerHeight) / 20000))
 
@@ -69,7 +74,7 @@ function AnimatedBackground() {
     render()
 
     return () => {
-      window.removeEventListener('resize', resize)
+      window.removeEventListener('resize', handleResize)
       cancelAnimationFrame(animationId)
     }
   }, [])
