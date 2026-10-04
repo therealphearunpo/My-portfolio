@@ -10,21 +10,31 @@ const NAV_LINKS = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [isDark, setIsDark] = useState(() => {
-    const saved = localStorage.getItem('theme');
-    if (saved) return saved === 'dark';
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [settingsOpen, setSettingsOpen] = useState(false)
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'system';
   });
 
   useEffect(() => {
-    if (isDark) {
-      document.body.classList.add('dark-theme');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.body.classList.remove('dark-theme');
-      localStorage.setItem('theme', 'light');
+    const applyTheme = (t) => {
+      const isDark = t === 'dark' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDark) {
+        document.body.classList.add('dark-theme');
+      } else {
+        document.body.classList.remove('dark-theme');
+      }
+    };
+    
+    applyTheme(theme);
+    localStorage.setItem('theme', theme);
+
+    if (theme === 'system') {
+      const query = window.matchMedia('(prefers-color-scheme: dark)');
+      const listener = () => applyTheme('system');
+      query.addEventListener('change', listener);
+      return () => query.removeEventListener('change', listener);
     }
-  }, [isDark]);
+  }, [theme]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -56,18 +66,29 @@ function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="nav-item d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
-              <div 
-                className={`ios-theme-toggle ${isDark ? 'dark' : ''}`} 
-                onClick={() => setIsDark(!isDark)}
-                role="button"
-                tabIndex={0}
-                aria-label="Toggle dark mode"
+            <li className="nav-item position-relative ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center">
+              <button 
+                className="theme-settings-btn"
+                onClick={() => setSettingsOpen(!settingsOpen)}
+                aria-label="Theme Settings"
               >
-                <div className="ios-toggle-knob">
-                  {isDark ? <i className="bi bi-moon-stars-fill text-dark"></i> : <i className="bi bi-sun-fill text-warning"></i>}
+                <i className="bi bi-gear-fill"></i> Settings
+              </button>
+              
+              {settingsOpen && (
+                <div className="theme-dropdown-menu">
+                  <div className="theme-dropdown-header">Appearance</div>
+                  <button className={`theme-dropdown-item ${theme === 'light' ? 'active' : ''}`} onClick={() => { setTheme('light'); setSettingsOpen(false); }}>
+                    <i className="bi bi-sun"></i> Light Mode
+                  </button>
+                  <button className={`theme-dropdown-item ${theme === 'dark' ? 'active' : ''}`} onClick={() => { setTheme('dark'); setSettingsOpen(false); }}>
+                    <i className="bi bi-moon-stars"></i> Dark Mode
+                  </button>
+                  <button className={`theme-dropdown-item ${theme === 'system' ? 'active' : ''}`} onClick={() => { setTheme('system'); setSettingsOpen(false); }}>
+                    <i className="bi bi-display"></i> System Default
+                  </button>
                 </div>
-              </div>
+              )}
             </li>
           </ul>
         </div>
