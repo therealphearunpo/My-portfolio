@@ -60,7 +60,7 @@ function Hero() {
             <div className="hero-avatar-box">
               <div className="d-flex flex-column align-items-center w-100">
                 <div className="avatar-frame">
-                  <img src="/avatar.jpg" alt="Po Phearun" />
+                  <img src="/avatar_transparent.png" alt="Po Phearun" />
                 </div>
                 <div className="code-box">
                   <div><span className="kw">const</span> <span className="prop">developer</span> = &#123;</div>
