@@ -63,26 +63,33 @@ function Hero() {
                   <img src="/avatar_transparent.png" alt="Po Phearun" />
                 </div>
                 <div className="code-box">
-                  <div><span className="kw">const</span> <span className="prop">developer</span> = &#123;</div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">name</span>: <span className="str">"Po Phearun"</span>,
+                  <div className="mac-header">
+                    <div className="mac-dot mac-close"></div>
+                    <div className="mac-dot mac-min"></div>
+                    <div className="mac-dot mac-max"></div>
                   </div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">university</span>: <span className="str">"RUPP"</span>,
+                  <div className="code-content">
+                    <div><span className="kw">const</span> <span className="prop">developer</span> = &#123;</div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">name</span>: <span className="str">"Po Phearun"</span>,
+                    </div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">university</span>: <span className="str">"RUPP"</span>,
+                    </div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">faculty</span>: <span className="str">"Faculty of Engineering"</span>,
+                    </div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">degree</span>: <span className="str">"B.Eng. IT Engineering"</span>,
+                    </div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">year</span>: <span className="num">3</span>,
+                    </div>
+                    <div style={{ paddingLeft: '1.2rem' }}>
+                      <span className="prop">status</span>: <span className="str">"Open to Internships"</span>
+                    </div>
+                    <div>&#125;;</div>
                   </div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">faculty</span>: <span className="str">"Faculty of Engineering"</span>,
-                  </div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">degree</span>: <span className="str">"B.Eng. IT Engineering"</span>,
-                  </div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">year</span>: <span className="num">3</span>,
-                  </div>
-                  <div style={{ paddingLeft: '1.2rem' }}>
-                    <span className="prop">status</span>: <span className="str">"Open to Internships"</span>
-                  </div>
-                  <div>&#125;;</div>
                 </div>
               </div>
             </div>
