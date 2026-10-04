@@ -30,7 +30,12 @@ function Hero() {
   return (
     <section id="home" className="hero-section">
       <div className="container">
-        <div className="row align-items-center g-4 g-lg-5">
+        <div className="row align-items-center g-4 g-lg-5 position-relative">
+          {/* Floating iOS Robot */}
+          <div className="floating-robot d-none d-lg-block">
+            <img src="/robot_transparent.png" alt="Floating Robot" />
+          </div>
+
           <div className="col-lg-7">
 
             <h1 className="hero-title">Phearun Po</h1>
