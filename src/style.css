@@ -2,17 +2,17 @@
   Authentic Student Developer Portfolio Style
   ============================================================ */
 :root {
-  --bg-color: #0b0f19;
-  --card-bg: #131a2a;
-  --card-border: #1e293b;
-  --card-hover: #1c263b;
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --accent-emerald: #10b981;
-  --accent-cyan: #38bdf8;
-  --accent-purple: #818cf8;
-  --font-serif: 'Times New Roman', Times, serif;
-  --font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+  --bg-color: #ffffff;
+  --card-bg: #f7f7f8;
+  --card-border: #e5e5e5;
+  --card-hover: #ececf1;
+  --text-main: #0d0d0d;
+  --text-muted: #666666;
+  --accent-emerald: #10a37f;
+  --accent-cyan: #10a37f;
+  --accent-purple: #8a2be2;
+  --font-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: Söhne Mono, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -53,8 +53,8 @@ a {
 }
 
 ::selection {
-  background: var(--accent-emerald);
-  color: #000000;
+  background: rgba(16, 163, 127, 0.2);
+  color: inherit;
 }
 
 /* ============================================================
@@ -64,7 +64,7 @@ a {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: radial-gradient(circle at 50% 0%, #151d33 0%, var(--bg-color) 75%);
+  background: var(--bg-color);
 }
 
 #bg-canvas {
@@ -86,7 +86,7 @@ a {
 
 .navbar-scrolled {
   padding: 0.75rem 0;
-  background: rgba(11, 15, 25, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -159,8 +159,8 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: rgba(16, 163, 127, 0.1);
+  border: 1px solid rgba(16, 163, 127, 0.3);
   color: var(--accent-emerald);
   padding: 0.35rem 0.85rem;
   border-radius: 20px;
@@ -207,7 +207,7 @@ section {
 
 .btn-primary-dev {
   background: var(--accent-emerald);
-  color: #0b0f19;
+  color: #ffffff;
   font-weight: 700;
   font-family: var(--font-mono);
   padding: 0.65rem 1.4rem;
@@ -219,8 +219,8 @@ section {
 }
 
 .btn-primary-dev:hover {
-  background: #34d399;
-  color: #0b0f19;
+  background: #0e8c6d;
+  color: #ffffff;
 }
 
 .btn-outline-dev {
@@ -264,7 +264,7 @@ section {
 
 /* Code Snippet Box */
 .code-box {
-  background: #0f172a;
+  background: #0d0d0d;
   border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
@@ -310,7 +310,7 @@ section {
 }
 
 .fact-item {
-  background: #0f172a;
+  background: #f7f7f8;
   border: 1px solid var(--card-border);
   padding: 0.9rem 1.1rem;
   border-radius: var(--radius-md);
@@ -358,7 +358,7 @@ section {
 }
 
 .tech-chip {
-  background: #0f172a;
+  background: #f7f7f8;
   border: 1px solid var(--card-border);
   color: var(--text-main);
   font-family: var(--font-mono);
@@ -445,7 +445,7 @@ section {
 }
 
 .tag-item {
-  background: #0f172a;
+  background: #f7f7f8;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   border: 1px solid rgba(56, 189, 248, 0.2);
@@ -466,7 +466,7 @@ section {
   align-items: center;
   gap: 1rem;
   padding: 0.9rem;
-  background: #0f172a;
+  background: #f7f7f8;
   border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
   margin-bottom: 1rem;
@@ -491,7 +491,7 @@ section {
 
 .form-control-dev {
   width: 100%;
-  background: #0f172a;
+  background: #ffffff;
   border: 1px solid var(--card-border);
   color: var(--text-main);
   font-family: var(--font-serif);
