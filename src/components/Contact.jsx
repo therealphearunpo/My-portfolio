@@ -106,7 +106,7 @@ function Contact() {
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
                   <div className="col-md-6">
-                    <label className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
+                    <label htmlFor="name" className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
                       YOUR NAME
                     </label>
                     <input
@@ -120,7 +120,7 @@ function Contact() {
                     />
                   </div>
                   <div className="col-md-6">
-                    <label className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
+                    <label htmlFor="email" className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
                       YOUR EMAIL
                     </label>
                     <input
@@ -135,7 +135,7 @@ function Contact() {
                   </div>
                 </div>
 
-                <label className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
+                <label htmlFor="subject" className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
                   SUBJECT
                 </label>
                 <input
@@ -148,7 +148,7 @@ function Contact() {
                   required
                 />
 
-                <label className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
+                <label htmlFor="message" className="mono-text" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.3rem', display: 'block' }}>
                   MESSAGE
                 </label>
                 <textarea

@@ -13,7 +13,7 @@ function About() {
           <div className="row g-4">
             <div className="col-lg-7">
               <p className="about-paragraph">
-                I am a 2nd-year student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
+                I am a Junior (Year 3) student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
                 My programming journey started with C and C++, where I built strong foundations in object-oriented programming, data structures, and memory management.
               </p>
               <p className="about-paragraph">
