@@ -32,10 +32,6 @@ function Hero() {
       <div className="container">
         <div className="row align-items-center g-4">
           <div className="col-lg-7">
-            <div className="status-badge">
-              <span className="status-dot"></span>
-              <span>Available for Software Engineering Internships</span>
-            </div>
 
             <h1 className="hero-title">Phearun Po</h1>
             <div className="hero-subtitle">
