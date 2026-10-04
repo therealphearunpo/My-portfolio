@@ -58,7 +58,7 @@ function Hero() {
 
           <div className="col-lg-5">
             <div className="hero-avatar-box">
-              <div>
+              <div className="d-flex flex-column align-items-center w-100">
                 <div className="avatar-frame">
                   <img src="/avatar.jpg" alt="Po Phearun" />
                 </div>
