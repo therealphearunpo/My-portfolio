@@ -17,6 +17,7 @@
   --radius-md: 10px;
   --radius-lg: 14px;
   --nav-bg: rgba(255, 255, 255, 0.92);
+  --typing-color: #000000;
 }
 
 body.dark-theme {
@@ -27,6 +28,7 @@ body.dark-theme {
   --text-main: #f0f0f5;
   --text-muted: #a1a1aa;
   --nav-bg: rgba(15, 17, 21, 0.92);
+  --typing-color: var(--accent-cyan);
 }
 
 .theme-toggle {
@@ -225,7 +227,7 @@ section {
 
 .hero-subtitle {
   font-family: var(--font-mono);
-  color: var(--accent-cyan);
+  color: var(--typing-color);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   margin-bottom: 1.2rem;
 }
