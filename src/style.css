@@ -556,3 +556,29 @@ section {
   color: var(--text-muted);
   text-align: center;
 }
+
+/* ============================================================
+  Responsive Layouts
+  ============================================================ */
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 6rem;
+    text-align: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-avatar-box {
+    margin-top: 2rem;
+  }
+  .avatar-frame {
+    width: min(200px, 50vw);
+    margin: 0 auto;
+  }
+  .code-box {
+    max-width: 280px;
+    margin: 1.2rem auto 0;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+}
