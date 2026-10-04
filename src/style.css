@@ -161,11 +161,11 @@ a {
   Section Headings
    ============================================================ */
 section {
-  padding: 6.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .section-header {
-  margin-bottom: 2.8rem;
+  margin-bottom: 1.8rem;
 }
 
 .section-title {
@@ -194,10 +194,10 @@ section {
   Hero Section
    ============================================================ */
 .hero-section {
-  min-height: 85vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .status-badge {
