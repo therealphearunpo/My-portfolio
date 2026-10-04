@@ -35,13 +35,13 @@ function Hero() {
 
           <div className="col-lg-7">
 
-            <h1 className="hero-title d-flex align-items-center flex-wrap gap-2">
-              Phearun Po
+            <div className="position-relative d-inline-block">
+              <h1 className="hero-title mb-0">Phearun Po</h1>
               {/* Floating iOS Robot */}
               <div className="floating-robot d-none d-sm-block">
                 <img src="/robot_transparent.png" alt="Floating Robot" />
               </div>
-            </h1>
+            </div>
             <div className="hero-subtitle">
               <span>{roleText}</span>
               <span className="mono-text" style={{ color: 'var(--accent-emerald)' }}>|</span>

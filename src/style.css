@@ -261,15 +261,14 @@ section {
 
 /* Floating iOS Robot */
 .floating-robot {
-  position: relative;
-  display: inline-block;
-  width: 90px;
+  position: absolute;
+  top: -45px;
+  right: -135px; /* Offset it entirely to the right of the text */
+  width: 140px;
   animation: float-robot 6s ease-in-out infinite;
   z-index: 10;
   pointer-events: none;
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
-  margin-left: 0.5rem;
-  margin-top: -10px;
 }
 
 @keyframes float-robot {
