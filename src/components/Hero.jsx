@@ -30,7 +30,7 @@ function Hero() {
   return (
     <section id="home" className="hero-section">
       <div className="container">
-        <div className="row align-items-center g-4">
+        <div className="row align-items-center g-4 g-lg-5">
           <div className="col-lg-7">
 
             <h1 className="hero-title">Phearun Po</h1>

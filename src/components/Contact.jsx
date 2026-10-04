@@ -48,7 +48,7 @@ function Contact() {
           </h2>
         </div>
 
-        <div className="row g-4">
+        <div className="row g-4 g-lg-5">
           <div className="col-lg-5">
             <div className="contact-card-dev">
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.8rem' }}>Let's Connect</h3>

@@ -10,7 +10,7 @@ function About() {
         </div>
 
         <div className="info-card">
-          <div className="row g-4">
+          <div className="row g-4 g-lg-5">
             <div className="col-lg-7">
               <p className="about-paragraph">
                 I am a Junior (Year 3) student pursuing a Bachelor of Engineering in Information Technology Engineering at the RUPP.
