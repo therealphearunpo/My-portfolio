@@ -516,11 +516,11 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.9rem;
+  padding: 0.75rem;
   background: var(--card-hover);
   border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   transition: all 0.25s ease;
 }
 

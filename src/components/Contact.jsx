@@ -48,9 +48,9 @@ function Contact() {
           </h2>
         </div>
 
-        <div className="row g-4 g-lg-5">
-          <div className="col-lg-5">
-            <div className="contact-card-dev">
+        <div className="contact-card-dev">
+          <div className="row g-4 g-lg-5">
+            <div className="col-lg-5">
               <h3 style={{ fontSize: '1.4rem', marginBottom: '0.8rem' }}>Let's Connect</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '1.02rem', marginBottom: '1.8rem' }}>
                 I am currently open to software development internship opportunities and projects. Feel free to reach out directly via email or Telegram.
@@ -101,7 +101,6 @@ function Contact() {
           </div>
 
           <div className="col-lg-7">
-            <div className="contact-card-dev">
               <h3 style={{ fontSize: '1.4rem', marginBottom: '1.2rem' }}>Send a Message</h3>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
