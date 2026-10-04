@@ -98,9 +98,8 @@ function Contact() {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="col-lg-7">
+            <div className="col-lg-7">
               <h3 style={{ fontSize: '1.4rem', marginBottom: '1.2rem' }}>Send a Message</h3>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
@@ -181,7 +180,6 @@ function Contact() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }
