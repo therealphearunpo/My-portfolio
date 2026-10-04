@@ -57,13 +57,17 @@ function Navbar() {
               </li>
             ))}
             <li className="nav-item d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
-              <button 
-                className="theme-toggle" 
+              <div 
+                className={`ios-theme-toggle ${isDark ? 'dark' : ''}`} 
                 onClick={() => setIsDark(!isDark)}
+                role="button"
+                tabIndex={0}
                 aria-label="Toggle dark mode"
               >
-                {isDark ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-stars-fill"></i>}
-              </button>
+                <div className="ios-toggle-knob">
+                  {isDark ? <i className="bi bi-moon-stars-fill text-dark"></i> : <i className="bi bi-sun-fill text-warning"></i>}
+                </div>
+              </div>
             </li>
           </ul>
         </div>
