@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import MyRobot from './MyRobot'
 
 const ROLES = ['IT Engineering', 'Web Developer', 'Software Engineer', 'AI Engineer', 'AI Researcher', 'Python Developer', 'C Programmer', 'C++ Programmer', 'JavaScript Programmer', 'Java Developer',]
 
@@ -6,21 +7,6 @@ function Hero() {
   const [roleText, setRoleText] = useState('')
   const [roleIdx, setRoleIdx] = useState(0)
   const [deleting, setDeleting] = useState(false)
-  const [isWaving, setIsWaving] = useState(false)
-
-  useEffect(() => {
-    let timeout;
-    const handleScroll = () => {
-      setIsWaving(true)
-      clearTimeout(timeout)
-      timeout = setTimeout(() => setIsWaving(false), 800) // wave for 800ms
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-      clearTimeout(timeout)
-    }
-  }, [])
 
   useEffect(() => {
     const current = ROLES[roleIdx % ROLES.length]
@@ -52,14 +38,7 @@ function Hero() {
 
             <div className="position-relative d-inline-block">
               <h1 className="hero-title mb-0">Phearun Po</h1>
-              {/* Floating iOS Robot */}
-              <div className="floating-robot d-none d-sm-block">
-                <img 
-                  src="/robot_transparent.png" 
-                  alt="Floating Robot" 
-                  className={isWaving ? 'waving' : ''}
-                />
-              </div>
+              <MyRobot />
             </div>
             <div className="hero-subtitle">
               <span>{roleText}</span>
