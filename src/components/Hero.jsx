@@ -6,6 +6,21 @@ function Hero() {
   const [roleText, setRoleText] = useState('')
   const [roleIdx, setRoleIdx] = useState(0)
   const [deleting, setDeleting] = useState(false)
+  const [isWaving, setIsWaving] = useState(false)
+
+  useEffect(() => {
+    let timeout;
+    const handleScroll = () => {
+      setIsWaving(true)
+      clearTimeout(timeout)
+      timeout = setTimeout(() => setIsWaving(false), 800) // wave for 800ms
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      clearTimeout(timeout)
+    }
+  }, [])
 
   useEffect(() => {
     const current = ROLES[roleIdx % ROLES.length]
@@ -39,7 +54,11 @@ function Hero() {
               <h1 className="hero-title mb-0">Phearun Po</h1>
               {/* Floating iOS Robot */}
               <div className="floating-robot d-none d-sm-block">
-                <img src="/robot_transparent.png" alt="Floating Robot" />
+                <img 
+                  src="/robot_transparent.png" 
+                  alt="Floating Robot" 
+                  className={isWaving ? 'waving' : ''}
+                />
               </div>
             </div>
             <div className="hero-subtitle">
