@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import MyRobot from './MyRobot'
 
 const ROLES = ['IT Engineering', 'Web Developer', 'Software Engineer', 'AI Engineer', 'AI Researcher', 'Python Developer', 'C Programmer', 'C++ Programmer', 'JavaScript Programmer', 'Java Developer',]
 
@@ -38,7 +37,6 @@ function Hero() {
 
             <div className="position-relative d-inline-block">
               <h1 className="hero-title mb-0">Phearun Po</h1>
-              <MyRobot />
             </div>
             <div className="hero-subtitle">
               <span>{roleText}</span>

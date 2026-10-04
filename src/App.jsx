@@ -6,6 +6,7 @@ import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import MyRobot from './components/MyRobot.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <MyRobot />
     </>
   )
 }
