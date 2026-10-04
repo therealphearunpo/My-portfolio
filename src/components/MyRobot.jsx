@@ -36,7 +36,7 @@ function MyRobot() {
   }
 
   return (
-    <div className="floating-robot d-none d-sm-block" onClick={handleRobotClick}>
+    <div className="floating-robot" onClick={handleRobotClick}>
       {message && (
         <div className="robot-speech-bubble">
           {message}
