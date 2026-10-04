@@ -272,11 +272,20 @@ section {
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
 }
 
+.robot-codebox-pos {
+  top: -70px;
+  right: -30px;
+}
+
 @media (max-width: 767px) {
   .floating-robot {
     width: 80px;
     right: -60px;
     top: -30px;
+  }
+  .robot-codebox-pos {
+    top: -45px;
+    right: -10px;
   }
 }
 

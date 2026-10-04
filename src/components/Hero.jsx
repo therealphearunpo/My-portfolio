@@ -36,9 +36,8 @@ function Hero() {
 
           <div className="col-lg-7">
 
-            <div className="position-relative d-inline-block">
+            <div>
               <h1 className="hero-title mb-0">Phearun Po</h1>
-              <MyRobot />
             </div>
             <div className="hero-subtitle">
               <span>{roleText}</span>
@@ -68,7 +67,9 @@ function Hero() {
                 <div className="avatar-frame">
                   <img src="/avatar_transparent.png" alt="Po Phearun" />
                 </div>
-                <div className="code-box">
+                <div className="position-relative w-100 d-flex justify-content-center">
+                  <MyRobot className="robot-codebox-pos" />
+                  <div className="code-box">
                   <div className="mac-header">
                     <div className="mac-dot mac-close"></div>
                     <div className="mac-dot mac-min"></div>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 
 const GREETINGS = ['Hello!', 'Hi there!', 'Welcome!', 'Hey!', 'Beep boop!'];
 
-function MyRobot() {
+function MyRobot({ className = "" }) {
   const [isWaving, setIsWaving] = useState(false)
   const [message, setMessage] = useState('')
   const waveTimeoutRef = useRef(null)
@@ -36,7 +36,7 @@ function MyRobot() {
   }
 
   return (
-    <div className="floating-robot" onClick={handleRobotClick}>
+    <div className={`floating-robot ${className}`} onClick={handleRobotClick}>
       {message && (
         <div className="robot-speech-bubble">
           {message}
