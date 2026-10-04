@@ -13,7 +13,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('submitting')
-    
+
     // IMPORTANT: Replace 'YOUR_FORM_ID' with the ID you get from Formspree.io
     const formspreeUrl = 'https://formspree.io/f/xeaejnwb'
 
@@ -169,12 +169,12 @@ function Contact() {
                   )}
                 </button>
                 {status === 'success' && (
-                  <div className="text-success mt-2" style={{fontSize: '0.9rem', fontFamily: 'var(--font-mono)'}}>
+                  <div className="text-success mt-2" style={{ fontSize: '0.9rem', fontFamily: 'var(--font-mono)' }}>
                     <i className="bi bi-check-circle"></i> Message sent successfully!
                   </div>
                 )}
                 {status === 'error' && (
-                  <div className="text-danger mt-2" style={{fontSize: '0.9rem', fontFamily: 'var(--font-mono)'}}>
+                  <div className="text-danger mt-2" style={{ fontSize: '0.9rem', fontFamily: 'var(--font-mono)' }}>
                     <i className="bi bi-exclamation-circle"></i> Failed to send. Please check your form ID.
                   </div>
                 )}
