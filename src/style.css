@@ -834,3 +834,76 @@ section {
     padding: 0.7rem 0.9rem;
   }
 }
+
+/* ============================================================
+  iOS Style Toggle for Mobile
+  ============================================================ */
+.ios-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--card-border);
+}
+
+.ios-toggle-label-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ios-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  margin: 0;
+}
+
+.ios-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ios-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e9e9ea;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+body.dark-theme .ios-toggle-slider {
+  background-color: #39393d;
+}
+
+.ios-toggle-slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.ios-toggle input:checked + .ios-toggle-slider {
+  background-color: #34c759;
+}
+
+.ios-toggle input:checked + .ios-toggle-slider:before {
+  transform: translateX(20px);
+}

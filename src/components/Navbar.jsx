@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const NAV_LINKS = [
+  { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
@@ -66,7 +67,8 @@ function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="nav-item position-relative ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center">
+            {/* Desktop Settings Dropdown */}
+            <li className="nav-item position-relative ms-lg-3 mt-3 mt-lg-0 d-none d-lg-flex align-items-center">
               <button 
                 className="theme-settings-btn"
                 onClick={() => setSettingsOpen(!settingsOpen)}
@@ -89,6 +91,27 @@ function Navbar() {
                   </button>
                 </div>
               )}
+            </li>
+
+            {/* Mobile iOS Dark Mode Toggle */}
+            <li className="nav-item d-lg-none mt-3">
+              <div className="ios-toggle-container">
+                <span className="ios-toggle-label-text">
+                  <i className="bi bi-moon-stars-fill"></i> Dark Mode
+                </span>
+                <label className="ios-toggle">
+                  <input 
+                    type="checkbox"
+                    checked={theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}
+                    onChange={(e) => {
+                      setTheme(e.target.checked ? 'dark' : 'light');
+                      // Optional: close menu after toggle
+                      // setIsOpen(false);
+                    }}
+                  />
+                  <span className="ios-toggle-slider"></span>
+                </label>
+              </div>
             </li>
           </ul>
         </div>
