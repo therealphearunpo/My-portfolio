@@ -33,7 +33,7 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
+    <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container">
         <a className="navbar-brand" href="#home">
           phearun<span className="accent">.po</span>
