@@ -15,7 +15,7 @@ function Contact() {
     setStatus('submitting')
     
     // IMPORTANT: Replace 'YOUR_FORM_ID' with the ID you get from Formspree.io
-    const formspreeUrl = 'https://formspree.io/f/YOUR_FORM_ID'
+    const formspreeUrl = 'https://formspree.io/f/xeaejnwb'
 
     try {
       const response = await fetch(formspreeUrl, {
