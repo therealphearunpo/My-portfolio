@@ -20,8 +20,8 @@ const PROJECTS = [
     description:
       'City weather lookup app fetching real-time weather metrics using asynchronous REST API requests and error handling.',
     tags: ['JavaScript', 'REST API', 'CSS3'],
-    github: 'https://github.com/therealphearunpo',
-    live: 'https://github.com/therealphearunpo',
+    github: 'https://github.com/therealphearunpo/weather-forecast-app',
+    live: 'https://therealphearunpo.github.io/weather-forecast-app/',
   },
   {
     title: 'Personal Portfolio',

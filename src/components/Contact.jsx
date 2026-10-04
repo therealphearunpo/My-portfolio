@@ -4,15 +4,38 @@ const INITIAL = { name: '', email: '', subject: '', message: '' }
 
 function Contact() {
   const [form, setForm] = useState(INITIAL)
+  const [status, setStatus] = useState('')
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    alert('Thank you for reaching out! (Mock submission)')
-    setForm(INITIAL)
+    setStatus('submitting')
+    
+    // IMPORTANT: Replace 'YOUR_FORM_ID' with the ID you get from Formspree.io
+    const formspreeUrl = 'https://formspree.io/f/YOUR_FORM_ID'
+
+    try {
+      const response = await fetch(formspreeUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(form)
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setForm(INITIAL)
+      } else {
+        setStatus('error')
+      }
+    } catch (error) {
+      setStatus('error')
+    }
   }
 
   return (
@@ -138,9 +161,23 @@ function Contact() {
                   required
                 ></textarea>
 
-                <button type="submit" className="btn-primary-dev w-100 justify-content-center mt-2">
-                  <i className="bi bi-send"></i> Send Message
+                <button type="submit" className="btn-primary-dev w-100 justify-content-center mt-3" disabled={status === 'submitting'}>
+                  {status === 'submitting' ? (
+                    'Sending...'
+                  ) : (
+                    <><i className="bi bi-send"></i> Send Message</>
+                  )}
                 </button>
+                {status === 'success' && (
+                  <div className="text-success mt-2" style={{fontSize: '0.9rem', fontFamily: 'var(--font-mono)'}}>
+                    <i className="bi bi-check-circle"></i> Message sent successfully!
+                  </div>
+                )}
+                {status === 'error' && (
+                  <div className="text-danger mt-2" style={{fontSize: '0.9rem', fontFamily: 'var(--font-mono)'}}>
+                    <i className="bi bi-exclamation-circle"></i> Failed to send. Please check your form ID.
+                  </div>
+                )}
               </form>
             </div>
           </div>
