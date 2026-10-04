@@ -582,3 +582,30 @@ section {
     text-align: left;
   }
 }
+
+@media (max-width: 767px) {
+  .project-card-dev {
+    padding: 1rem;
+  }
+  .project-name {
+    font-size: 0.95rem;
+  }
+  .project-desc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  .project-folder-icon {
+    font-size: 1.2rem;
+  }
+  .project-links a {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  .tag-item {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.3rem;
+  }
+  .project-tags-dev {
+    gap: 0.3rem;
+  }
+}

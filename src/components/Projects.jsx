@@ -44,9 +44,9 @@ function Projects() {
           </h2>
         </div>
 
-        <div className="row g-4">
+        <div className="row g-3 g-md-4">
           {PROJECTS.map((p) => (
-            <div className="col-md-6" key={p.title}>
+            <div className="col-6 col-md-6" key={p.title}>
               <div className="project-card-dev">
                 <div className="project-top">
                   <i className="bi bi-folder-symlink project-folder-icon"></i>
