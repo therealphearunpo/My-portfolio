@@ -44,9 +44,9 @@ function Skills() {
           </h2>
         </div>
 
-        <div className="row g-4">
+        <div className="row g-2 g-md-4">
           {CATEGORIES.map((cat) => (
-            <div className="col-lg-4 col-md-6" key={cat.title}>
+            <div className="col-6 col-md-6 col-lg-4" key={cat.title}>
               <div className="stack-category">
                 <div className="stack-category-title">
                   <i className={cat.icon}></i> {cat.title}
