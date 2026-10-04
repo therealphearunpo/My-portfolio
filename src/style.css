@@ -261,21 +261,21 @@ section {
 
 /* Floating iOS Robot */
 .floating-robot {
-  position: absolute;
-  top: -100px;
-  right: 48%;
-  transform: translateX(50%);
-  width: 150px;
+  position: relative;
+  display: inline-block;
+  width: 90px;
   animation: float-robot 6s ease-in-out infinite;
   z-index: 10;
   pointer-events: none;
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+  margin-left: 0.5rem;
+  margin-top: -10px;
 }
 
 @keyframes float-robot {
-  0% { transform: translate(50%, 0px); }
-  50% { transform: translate(50%, -20px); }
-  100% { transform: translate(50%, 0px); }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 .floating-robot img {
