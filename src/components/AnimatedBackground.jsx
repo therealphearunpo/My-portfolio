@@ -75,6 +75,7 @@ function AnimatedBackground() {
 
     return () => {
       window.removeEventListener('resize', handleResize)
+      clearTimeout(resizeTimeout)
       cancelAnimationFrame(animationId)
     }
   }, [])
