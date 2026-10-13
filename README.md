@@ -1,4 +1,4 @@
-﻿# My Portfolio
+# My Portfolio
 
 A stunning, modern personal portfolio website built with React, Vite, and pure CSS.
 
@@ -10,14 +10,16 @@ A stunning, modern personal portfolio website built with React, Vite, and pure C
 - Skills section
   
 ## Tech Stack
-- React 18
-- Vite 5
+- React 19
+- Vite 8
+- Bootstrap 5
 - CSS3
 - EmailJS
 
 ## Getting Started
-`bash
-git clone https://github.com/phearun/my-portfolio
+```bash
+git clone https://github.com/therealphearunpo/My-portfolio.git
+cd My-portfolio
 npm install
 npm run dev
-`
+```
